@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css in form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+   
+      
+     article {
+            border: 2px solid rgba(210, 105, 30, 0.538);
+            border-radius: 10px;
+            width: 35%;
+            padding: 10px;
+            background-color:#fff;
+            position:absolute;
+            width: 300px;
+            top: 100px;
+            left: 600px;
+           
+        }
+    input{
+        width: 50%;
+        border: 2px solid rgba(228, 118, 39, 0.538);
+        margin-bottom: 10px;
+        
+    }
+input:focus{
+
+background-color:  rgba(228, 118, 39, 0.538);
+color: #fff;
+
+}
+
+input[type=number]{
+
+background-image: url(phn.png);
+background-repeat: no-repeat;
+background-color: #fff;
+color: rgb(214, 24, 27);
+
+}
+ select{
+    width: 50%;
+        border: 2px solid rgba(228, 118, 39, 0.538);
+        margin-bottom: 10px;
+       
+ }   
+select option{
+background-color: rgba(228, 118, 39, 0.538);
+
+}
+
+form{
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    padding: 10px 0;
+    width: 50%;
+   margin: 60px;
+
+
+}
+
+.submit-button {
+    padding: 10px 20px;
+      background-color:rgba(228, 118, 39, 0.538);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      align-items: center;
+     
+    }
+
+    /* Add hover effect */
+    .submit-button:hover {
+    
+      background-color:rgba(228, 118, 39, 0.538);
+    }
+    </style>
+</head>
+<body>
+    <article >
+        <h1>Delicious Coffee.</h1>
+    <form action="#" method="post">
+    <label for="Customer Name">Customer Name</label>   
+    <input type="text" id="Customer Name"> <br><br>
+    <label for="Customer Phone">Customer Phone</label>   
+    <input type="number" id="Customer Phone"> 
+   <br><br>
+<label for="Type of Coffee"> Type of Coffee</label>
+<select name="Type of Coffee" id="Type of Coffee">
+<option id="Regular">Regular</option>
+<option id="Deca">Deca</option>
+<option id="Deca">50\50</option></select>
+<br><br>
+<label for="Coffee Temperature"> Coffee Temperature</label>
+<select name="Coffee Temperature" id="Coffee Temperature">
+   <option id="Hot">Hot</option> 
+   <option id="Cold">Cold</option>
+</select>
+<br><br>
+<label for="Type of Sweetener "> Type of Sweetener </label>
+<select name="Type of Sweetener " id="Type of Sweetener ">
+    <option> Suger</option>
+    <option> Splenda</option>
+    <option> Equal</option>
+    <option> Sweet n'Low</option>
+    <option> Stevia</option>
+</select> 
+<br><br>
+<label for="Type of creamer  "> Type of creamer </label>
+<select name="Type of creamer " id="Type of creamer ">
+<option>Half & Half</option>
+<option>Whole Milk</option>
+<option> Skim Milk</option>
+<option>Almond Milk</option>
+<option> Oat Milk</option>
+</select><br><br>
+<br<br>
+<label for="Size"> Size </label>
+<select name="Size " id="Size ">
+<option>Small</option>
+<option>Medium</option>
+<option>Large</option>
+</select> <br><br>
+<label for="The Place"> The Place </label>
+<select name="The Place" id="The Place ">
+    <option>To Go</option>
+<option>Not</option>
+</select>
+<button type="submit" class="submit-button">Submit</button>
+    </form>
+</article>
+
+</body>
+</html>
